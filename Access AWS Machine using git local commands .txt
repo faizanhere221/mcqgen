@@ -1,0 +1,26 @@
+cd /c/Users/QC/mcqgen
+
+ chmod 400 mcqkeyy.pem
+
+
+ssh -i mcqkeyy.pem ubuntu@16.170.209.252
+
+
+
+
+USE A VIRTUAL ENVIRNOEMent for installing packages and run app
+
+sudo apt update
+sudo apt install python3-venv -y
+python3 -m venv venv
+source venv/bin/activate
+your terminal will look like this :
+(venv) ubuntu@ip-172-31-15-141:~/mcqgen$
+
+pip install -r requirements.txt
+
+to deactivate the virtual environemnt :
+
+deactivate
+
+python3 -m streamlit run StreamlitAPP.py
